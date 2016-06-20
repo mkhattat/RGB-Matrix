@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="LedRunner" InternalType="">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00010001N0005Debug000000000000]]>
+    </Plugin>
+    <Plugin Name="CMakePlugin">
+      <![CDATA[[{
+  "name": "Debug",
+  "enabled": false,
+  "buildDirectory": "build",
+  "sourceDirectory": "$(ProjectPath)",
+  "generator": "",
+  "buildType": "",
+  "arguments": [],
+  "parentProject": ""
+ }]]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="Led_Runner">
+    <File Name="main.cpp"/>
+    <File Name="AnimationObject.hpp"/>
+    <File Name="Obstacles.hpp"/>
+    <File Name="Obstacles.cpp"/>
+    <File Name="Makefile"/>
+    <File Name="straightLine.hpp"/>
+    <File Name="straightLine.cpp"/>
+    <File Name="Coordinate.hpp"/>
+    <File Name="Runner.hpp"/>
+    <File Name="Runner.cpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="animations">
+    <File Name="animations/animation.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="fonts">
+    <File Name="fonts/times12.h"/>
+    <File Name="fonts/tahoma12.h"/>
+    <File Name="fonts/tahoma10.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="photos">
+    <File Name="photos/emotions.h"/>
+    <File Name="photos/google2.h"/>
+    <File Name="photos/colors.h"/>
+    <File Name="photos/pic1.h"/>
+    <File Name="photos/pic.h"/>
+    <File Name="photos/hu.h"/>
+    <File Name="photos/pic2.h"/>
+    <File Name="photos/google4.h"/>
+    <File Name="photos/arch.h"/>
+    <File Name="photos/google3.h"/>
+    <File Name="photos/google.h"/>
+    <File Name="photos/google5.h"/>
+    <File Name="photos/ppic.h"/>
+  </VirtualDirectory>
+  <Settings Type="Dynamic Library">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Debug" Command="/home/mostafa/Documents/IPASS/LedRunner/upload.sh" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="/home/mostafa/Documents/IPASS/LedRunner" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand>make clean;make</RebuildCommand>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make clean;make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(ProjectPath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Release" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+  <VirtualDirectory Name="core">
+    <File Name="core/gamma.h"/>
+    <File Name="core/String.hpp"/>
+    <File Name="core/startup_sam3xa.c"/>
+    <File Name="core/Graphics.hpp"/>
+    <File Name="core/Image.hpp"/>
+    <File Name="core/matrix.hpp"/>
+    <File Name="core/vector.hpp"/>
+    <File Name="core/Image.cpp"/>
+    <File Name="core/AnimatedImage.cpp"/>
+    <File Name="core/Timer.hpp"/>
+    <File Name="core/init.c"/>
+    <File Name="core/matrix.cpp"/>
+    <File Name="core/String.cpp"/>
+    <File Name="core/gamma_generator.c"/>
+    <File Name="core/AnimatedImage.hpp"/>
+    <File Name="core/Timer.cpp"/>
+    <File Name="core/Screen.hpp"/>
+  </VirtualDirectory>
+</CodeLite_Project>
