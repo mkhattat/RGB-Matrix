@@ -8,3 +8,4 @@
 // a dummy stack must be used to make the compilation successful.
 unsigned char bmptk_stack[ 73728 ]
    __attribute__ (( section( ".bmptk_stack" )));
+
