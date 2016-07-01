@@ -1,3 +1,9 @@
+/* This is a helper script for the game.
+ * You do not need to complie this for the actuele game.
+ *  This script is used in combination with pipe to build the patterns
+ */
+
+
 #include <iostream>
 #include <string>
 
