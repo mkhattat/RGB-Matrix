@@ -1,0 +1,119 @@
+\hypertarget{classvector}{}\section{vector Class Reference}
+\label{classvector}\index{vector@{vector}}
+
+
+Implementation of vector class to store x and y.  
+
+
+
+
+{\ttfamily \#include $<$vector.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvector_a7fa147d3199381b9d8b32753bd1a6968}{vector} (int \hyperlink{classvector_a0403eb3aea23a3009e276fba1d317046}{x}, int \hyperlink{classvector_aad6de640298eae97ca0a094db5aff477}{y})
+\item 
+\hyperlink{classvector_a829904aef4f1a78fc3c52ef7c857f8f4}{vector} (const \hyperlink{classvector}{vector} \&rhs)
+\item 
+\hyperlink{classvector}{vector} \& \hyperlink{classvector_acf4c6a4d343c92e211f80de7712a3cac}{operator+=} (const \hyperlink{classvector}{vector} \&rhs)
+\item 
+\hyperlink{classvector}{vector} \hyperlink{classvector_a2ab7f62262c6f0c6ade3bd1879e6001e}{operator+} (const \hyperlink{classvector}{vector} \&rhs) const 
+\item 
+\hyperlink{classvector}{vector} \& \hyperlink{classvector_a9f6cf8d24ca60a5bec617c364172d89f}{operator-\/=} (const \hyperlink{classvector}{vector} \&rhs)
+\item 
+\hyperlink{classvector}{vector} \hyperlink{classvector_ad9596a53b6aef33bbddfa7b9b4b17f09}{operator-\/} (const \hyperlink{classvector}{vector} \&rhs) const 
+\item 
+\hyperlink{classvector}{vector} \& \hyperlink{classvector_a6adc3766a4afa03340fa2a94d6d81a00}{operator$\ast$=} (int n)
+\item 
+\hyperlink{classvector}{vector} \hyperlink{classvector_ac69d5833c619427c28a8fb120d30b5c8}{operator$\ast$} (int n) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classvector_a0403eb3aea23a3009e276fba1d317046}{x}
+\item 
+int \hyperlink{classvector_aad6de640298eae97ca0a094db5aff477}{y}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of vector class to store x and y. 
+
+This class used by several classes in this library to store x and y or width and height. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{vector@{vector}!vector@{vector}}
+\index{vector@{vector}!vector@{vector}}
+\subsubsection[{\texorpdfstring{vector(int x, int y)}{vector(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}vector\+::vector (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classvector_a7fa147d3199381b9d8b32753bd1a6968}{}\label{classvector_a7fa147d3199381b9d8b32753bd1a6968}
+\index{vector@{vector}!vector@{vector}}
+\index{vector@{vector}!vector@{vector}}
+\subsubsection[{\texorpdfstring{vector(const vector \&rhs)}{vector(const vector &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}vector\+::vector (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classvector_a829904aef4f1a78fc3c52ef7c857f8f4}{}\label{classvector_a829904aef4f1a78fc3c52ef7c857f8f4}
+
+
+\subsection{Member Function Documentation}
+\index{vector@{vector}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vector@{vector}}
+\subsubsection[{\texorpdfstring{operator$\ast$(int n) const }{operator*(int n) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector} vector\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classvector_ac69d5833c619427c28a8fb120d30b5c8}{}\label{classvector_ac69d5833c619427c28a8fb120d30b5c8}
+\index{vector@{vector}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!vector@{vector}}
+\subsubsection[{\texorpdfstring{operator$\ast$=(int n)}{operator*=(int n)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector}\& vector\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classvector_a6adc3766a4afa03340fa2a94d6d81a00}{}\label{classvector_a6adc3766a4afa03340fa2a94d6d81a00}
+\index{vector@{vector}!operator+@{operator+}}
+\index{operator+@{operator+}!vector@{vector}}
+\subsubsection[{\texorpdfstring{operator+(const vector \&rhs) const }{operator+(const vector &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector} vector\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector} \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classvector_a2ab7f62262c6f0c6ade3bd1879e6001e}{}\label{classvector_a2ab7f62262c6f0c6ade3bd1879e6001e}
+\index{vector@{vector}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!vector@{vector}}
+\subsubsection[{\texorpdfstring{operator+=(const vector \&rhs)}{operator+=(const vector &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector}\& vector\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classvector_acf4c6a4d343c92e211f80de7712a3cac}{}\label{classvector_acf4c6a4d343c92e211f80de7712a3cac}
+\index{vector@{vector}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!vector@{vector}}
+\subsubsection[{\texorpdfstring{operator-\/(const vector \&rhs) const }{operator-(const vector &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector} vector\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector} \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classvector_ad9596a53b6aef33bbddfa7b9b4b17f09}{}\label{classvector_ad9596a53b6aef33bbddfa7b9b4b17f09}
+\index{vector@{vector}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!vector@{vector}}
+\subsubsection[{\texorpdfstring{operator-\/=(const vector \&rhs)}{operator-=(const vector &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector}\& vector\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf vector} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classvector_a9f6cf8d24ca60a5bec617c364172d89f}{}\label{classvector_a9f6cf8d24ca60a5bec617c364172d89f}
+
+
+\subsection{Member Data Documentation}
+\index{vector@{vector}!x@{x}}
+\index{x@{x}!vector@{vector}}
+\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}int vector\+::x}\hypertarget{classvector_a0403eb3aea23a3009e276fba1d317046}{}\label{classvector_a0403eb3aea23a3009e276fba1d317046}
+\index{vector@{vector}!y@{y}}
+\index{y@{y}!vector@{vector}}
+\subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}int vector\+::y}\hypertarget{classvector_aad6de640298eae97ca0a094db5aff477}{}\label{classvector_aad6de640298eae97ca0a094db5aff477}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vector_8hpp}{vector.\+hpp}\end{DoxyCompactItemize}

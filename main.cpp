@@ -26,11 +26,13 @@ void presentation(){
 //				target::pins::d37, target::pins::d38);
 	matrix led(64, 32, true);
 	led.start();
+
 	
 	Timer t;
 	
 	led.clear();
 	Image im(led, simpson, vector(15, 0));
+//	led.fillScreen(50,10,10);
 	im.draw();
 	led.swap_buffer(false);
 

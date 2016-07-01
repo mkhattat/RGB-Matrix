@@ -1,0 +1,110 @@
+\hypertarget{class_animated_image}{}\section{Animated\+Image Class Reference}
+\label{class_animated_image}\index{Animated\+Image@{Animated\+Image}}
+
+
+Animate\+Image implementation for raw gif files.  
+
+
+
+
+{\ttfamily \#include $<$Animated\+Image.\+hpp$>$}
+
+Inheritance diagram for Animated\+Image\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_animated_image}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_animated_image_a8b076dfb51777da777b77d2c5283ff6d}{Animated\+Image} (\hyperlink{class_screen}{Screen} \&\hyperlink{class_graphics_a7a73ddd0d3cf1b67fc54f303be017c3b}{w}, const uint8\+\_\+t $\ast$image, \hyperlink{classvector}{vector} \hyperlink{class_graphics_a88c2112c7a3db3ee56f4c7fe2cac6055}{location}=\hyperlink{classvector}{vector}(0, 0))
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_animated_image}{Animated\+Image} constructor\textquotesingle{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_animated_image_ab71f472b7a737d142fb6bf838dfc9818}{draw} ()
+\begin{DoxyCompactList}\small\item\em draw the animated image on the screen. \end{DoxyCompactList}\item 
+void \hyperlink{class_animated_image_a70cc2439dedf9e5fc366dd3a1534c167}{draw} (int update\+Interval, bool loop=false)
+\begin{DoxyCompactList}\small\item\em draw the animated image on the screen. \end{DoxyCompactList}\item 
+void \hyperlink{class_animated_image_a4f9a9236d7e2cec0b8b140743ac8340e}{draw\+Frame} (int)
+\begin{DoxyCompactList}\small\item\em draw a specefiek frame on the screen. \end{DoxyCompactList}\item 
+int \hyperlink{class_animated_image_af398536b19d4bdeefebfed02c77f47b3}{get\+Total\+Frames} ()
+\begin{DoxyCompactList}\small\item\em Return number of frames of the animated\+Image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Animate\+Image implementation for raw gif files. 
+
+A class used to draw raw gif animations on the screen. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Animated\+Image@{Animated\+Image}!Animated\+Image@{Animated\+Image}}
+\index{Animated\+Image@{Animated\+Image}!Animated\+Image@{Animated\+Image}}
+\subsubsection[{\texorpdfstring{Animated\+Image(\+Screen \&w, const uint8\+\_\+t $\ast$image, vector location=vector(0, 0))}{AnimatedImage(Screen &w, const uint8_t *image, vector location=vector(0, 0))}}]{\setlength{\rightskip}{0pt plus 5cm}Animated\+Image\+::\+Animated\+Image (
+\begin{DoxyParamCaption}
+\item[{{\bf Screen} \&}]{w, }
+\item[{const uint8\+\_\+t $\ast$}]{image, }
+\item[{{\bf vector}}]{location = {\ttfamily {\bf vector}(0,0)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_animated_image_a8b076dfb51777da777b77d2c5283ff6d}{}\label{class_animated_image_a8b076dfb51777da777b77d2c5283ff6d}
+
+
+\hyperlink{class_animated_image}{Animated\+Image} constructor\textquotesingle{}. 
+
+\hyperlink{class_screen}{Screen} is the screen to draw on e.\+g. matrix. image is the raw gif file converted by a commandline script. After you included the conveted gif animation you can pass it to this function. Location is the location of animated image on the screen. 
+
+\subsection{Member Function Documentation}
+\index{Animated\+Image@{Animated\+Image}!draw@{draw}}
+\index{draw@{draw}!Animated\+Image@{Animated\+Image}}
+\subsubsection[{\texorpdfstring{draw()}{draw()}}]{\setlength{\rightskip}{0pt plus 5cm}void Animated\+Image\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_animated_image_ab71f472b7a737d142fb6bf838dfc9818}{}\label{class_animated_image_ab71f472b7a737d142fb6bf838dfc9818}
+
+
+draw the animated image on the screen. 
+
+You do not need to swap buffers. Default loop is false and update interval is 10 milliseconds. 
+
+Implements \hyperlink{class_graphics_a144fcecfe73dd5957c081dad42e1c11d}{Graphics}.
+
+\index{Animated\+Image@{Animated\+Image}!draw@{draw}}
+\index{draw@{draw}!Animated\+Image@{Animated\+Image}}
+\subsubsection[{\texorpdfstring{draw(int update\+Interval, bool loop=false)}{draw(int updateInterval, bool loop=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animated\+Image\+::draw (
+\begin{DoxyParamCaption}
+\item[{int}]{update\+Interval, }
+\item[{bool}]{loop = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_animated_image_a70cc2439dedf9e5fc366dd3a1534c167}{}\label{class_animated_image_a70cc2439dedf9e5fc366dd3a1534c167}
+
+
+draw the animated image on the screen. 
+
+You do not need to swap buffers. update\+Interval is the delay between each frame. if loop is true the animation will be restarted when the last frame showed on the screen. \index{Animated\+Image@{Animated\+Image}!draw\+Frame@{draw\+Frame}}
+\index{draw\+Frame@{draw\+Frame}!Animated\+Image@{Animated\+Image}}
+\subsubsection[{\texorpdfstring{draw\+Frame(int)}{drawFrame(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animated\+Image\+::draw\+Frame (
+\begin{DoxyParamCaption}
+\item[{int}]{frame}
+\end{DoxyParamCaption}
+)}\hypertarget{class_animated_image_a4f9a9236d7e2cec0b8b140743ac8340e}{}\label{class_animated_image_a4f9a9236d7e2cec0b8b140743ac8340e}
+
+
+draw a specefiek frame on the screen. 
+
+You need to swap buffer if double buffering is enabled. \index{Animated\+Image@{Animated\+Image}!get\+Total\+Frames@{get\+Total\+Frames}}
+\index{get\+Total\+Frames@{get\+Total\+Frames}!Animated\+Image@{Animated\+Image}}
+\subsubsection[{\texorpdfstring{get\+Total\+Frames()}{getTotalFrames()}}]{\setlength{\rightskip}{0pt plus 5cm}int Animated\+Image\+::get\+Total\+Frames (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_animated_image_af398536b19d4bdeefebfed02c77f47b3}{}\label{class_animated_image_af398536b19d4bdeefebfed02c77f47b3}
+
+
+Return number of frames of the animated\+Image. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_animated_image_8hpp}{Animated\+Image.\+hpp}\item 
+\hyperlink{_animated_image_8cpp}{Animated\+Image.\+cpp}\end{DoxyCompactItemize}

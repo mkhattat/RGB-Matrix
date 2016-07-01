@@ -111,8 +111,6 @@ Discarded input sections
                 0x00000000       0x3c matrix.o
  .text._ZN5hwlib20cout_using_uart_putc4putcEc
                 0x00000000        0xa matrix.o
- .text._ZN6matrixC2EiibN3due7pin_outES1_S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_
-                0x00000000      0x160 matrix.o
  .rodata._ZTVN5hwlib19_pin_in_dummy_classE
                 0x00000000        0xc matrix.o
  .rodata._ZTVN5hwlib20_pin_out_dummy_classE
@@ -791,6 +789,7 @@ Discarded input sections
  .group         0x00000000        0x8 main.o
  .group         0x00000000        0x8 main.o
  .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
  .text          0x00000000        0x0 main.o
  .data          0x00000000        0x0 main.o
  .bss           0x00000000        0x0 main.o
@@ -828,6 +827,8 @@ Discarded input sections
                 0x00000000       0x20 main.o
  .text._ZN3due14port_registersEi
                 0x00000000       0x48 main.o
+ .text._ZN3due7pin_outC2ENS_4pinsE
+                0x00000000       0x34 main.o
  .text._ZN5hwlib7wait_usEi
                 0x00000000       0x28 main.o
  .text._ZN5hwlib24uart_putc_bit_banged_pinEcRNS_7pin_outE
@@ -951,7 +952,7 @@ END GROUP
                 [!provide]                PROVIDE (__ram_size, __ram_size)
                 [!provide]                PROVIDE (__ram_end, __ram_end)
 
-.text           0x00000000     0xb350
+.text           0x00000000     0xb570
                 0x00000000                . = ALIGN (0x4)
                 0x00000000                __text_start = .
                 [!provide]                PROVIDE (__text_start, __text_start)
@@ -1066,217 +1067,221 @@ END GROUP
                 0x00000654      0x128 matrix.o
                 0x00000654                matrix::matrix(int, int, bool)
                 0x00000654                matrix::matrix(int, int, bool)
+ .text._ZN6matrixC2EiibN3due7pin_outES1_S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_S1_
+                0x0000077c      0x160 matrix.o
+                0x0000077c                matrix::matrix(int, int, bool, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out)
+                0x0000077c                matrix::matrix(int, int, bool, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out, due::pin_out)
  .text._ZN6matrix7update2Ev
-                0x0000077c      0x1d0 matrix.o
-                0x0000077c                matrix::update2()
+                0x000008dc      0x1d0 matrix.o
+                0x000008dc                matrix::update2()
  .text.TC3_Handler
-                0x0000094c       0x44 matrix.o
-                0x0000094c                TC3_Handler
+                0x00000aac       0x44 matrix.o
+                0x00000aac                TC3_Handler
  .text._ZN5Image4drawEv
-                0x00000990       0x5a Image.o
-                0x00000990                Image::draw()
+                0x00000af0       0x5a Image.o
+                0x00000af0                Image::draw()
  .text._ZN6String4drawEv
-                0x000009ea       0xe2 String.o
-                0x000009ea                String::draw()
+                0x00000b4a       0xe2 String.o
+                0x00000b4a                String::draw()
  .text._ZN6StringC2ER6ScreenPKhPchhh6vector
-                0x00000acc       0x40 String.o
-                0x00000acc                String::String(Screen&, unsigned char const*, char*, unsigned char, unsigned char, unsigned char, vector)
-                0x00000acc                String::String(Screen&, unsigned char const*, char*, unsigned char, unsigned char, unsigned char, vector)
+                0x00000c2c       0x40 String.o
+                0x00000c2c                String::String(Screen&, unsigned char const*, char*, unsigned char, unsigned char, unsigned char, vector)
+                0x00000c2c                String::String(Screen&, unsigned char const*, char*, unsigned char, unsigned char, unsigned char, vector)
  .text._ZN6StringC2ER6ScreenPKhPcm6vector
-                0x00000b0c       0x38 String.o
-                0x00000b0c                String::String(Screen&, unsigned char const*, char*, unsigned long, vector)
-                0x00000b0c                String::String(Screen&, unsigned char const*, char*, unsigned long, vector)
+                0x00000c6c       0x38 String.o
+                0x00000c6c                String::String(Screen&, unsigned char const*, char*, unsigned long, vector)
+                0x00000c6c                String::String(Screen&, unsigned char const*, char*, unsigned long, vector)
  .text._ZN6String5clearEi
-                0x00000b44       0x38 String.o
-                0x00000b44                String::clear(int)
+                0x00000ca4       0x38 String.o
+                0x00000ca4                String::clear(int)
  .text._ZN6String6scrollEibi
-                0x00000b7c      0x138 String.o
-                0x00000b7c                String::scroll(int, bool, int)
+                0x00000cdc      0x138 String.o
+                0x00000cdc                String::scroll(int, bool, int)
  .text._ZN13AnimatedImage9drawFrameEi
-                0x00000cb4       0x6c AnimatedImage.o
-                0x00000cb4                AnimatedImage::drawFrame(int)
+                0x00000e14       0x6c AnimatedImage.o
+                0x00000e14                AnimatedImage::drawFrame(int)
  .text._ZN13AnimatedImage4drawEib
-                0x00000d20       0x4a AnimatedImage.o
-                0x00000d20                AnimatedImage::draw(int, bool)
+                0x00000e80       0x4a AnimatedImage.o
+                0x00000e80                AnimatedImage::draw(int, bool)
  .text._ZN13AnimatedImage4drawEv
-                0x00000d6a        0x8 AnimatedImage.o
-                0x00000d6a                AnimatedImage::draw()
+                0x00000eca        0x8 AnimatedImage.o
+                0x00000eca                AnimatedImage::draw()
  .text._ZN13AnimatedImage14getTotalFramesEv
-                0x00000d72        0x6 AnimatedImage.o
-                0x00000d72                AnimatedImage::getTotalFrames()
+                0x00000ed2        0x6 AnimatedImage.o
+                0x00000ed2                AnimatedImage::getTotalFrames()
  .text._ZN5TimerC2Ev
-                0x00000d78       0x7c Timer.o
-                0x00000d78                Timer::Timer()
-                0x00000d78                Timer::Timer()
+                0x00000ed8       0x7c Timer.o
+                0x00000ed8                Timer::Timer()
+                0x00000ed8                Timer::Timer()
  .text._ZN5Timer17delayMillisecondsEm
-                0x00000df4       0x28 Timer.o
-                0x00000df4                Timer::delayMilliseconds(unsigned long)
+                0x00000f54       0x28 Timer.o
+                0x00000f54                Timer::delayMilliseconds(unsigned long)
  .text.TC0_Handler
-                0x00000e1c       0x28 Timer.o
-                0x00000e1c                TC0_Handler
+                0x00000f7c       0x28 Timer.o
+                0x00000f7c                TC0_Handler
  .text._ZN10Coordinate11getLocationEv
-                0x00000e44        0xa Obstacles.o
-                0x00000e44                Coordinate::getLocation()
+                0x00000fa4        0xa Obstacles.o
+                0x00000fa4                Coordinate::getLocation()
  .text._ZN15AnimationObject6updateEv
-                0x00000e4e        0x2 Obstacles.o
-                0x00000e4e                AnimationObject::update()
+                0x00000fae        0x2 Obstacles.o
+                0x00000fae                AnimationObject::update()
  .text._ZN15AnimationObject6updateER10Coordinate
-                0x00000e50        0x4 Obstacles.o
-                0x00000e50                AnimationObject::update(Coordinate&)
+                0x00000fb0        0x4 Obstacles.o
+                0x00000fb0                AnimationObject::update(Coordinate&)
  .text._ZN9ObstaclesC2ER6ScreenRN3due6pin_inE6vector
-                0x00000e54       0x50 Obstacles.o
-                0x00000e54                Obstacles::Obstacles(Screen&, due::pin_in&, vector)
-                0x00000e54                Obstacles::Obstacles(Screen&, due::pin_in&, vector)
+                0x00000fb4       0x50 Obstacles.o
+                0x00000fb4                Obstacles::Obstacles(Screen&, due::pin_in&, vector)
+                0x00000fb4                Obstacles::Obstacles(Screen&, due::pin_in&, vector)
  .text._ZN9Obstacles9drawBlockE6vectorS0_i
-                0x00000ea4       0x3a Obstacles.o
-                0x00000ea4                Obstacles::drawBlock(vector, vector, int)
- *fill*         0x00000ede        0x2 
+                0x00001004       0x3a Obstacles.o
+                0x00001004                Obstacles::drawBlock(vector, vector, int)
+ *fill*         0x0000103e        0x2 
  .text._ZN9Obstacles11drawPatternER10Coordinate
-                0x00000ee0       0xf4 Obstacles.o
-                0x00000ee0                Obstacles::drawPattern(Coordinate&)
+                0x00001040       0xf4 Obstacles.o
+                0x00001040                Obstacles::drawPattern(Coordinate&)
  .text._ZN9Obstacles22drawPattern_upsideDownER10Coordinate
-                0x00000fd4       0xf4 Obstacles.o
-                0x00000fd4                Obstacles::drawPattern_upsideDown(Coordinate&)
+                0x00001134       0xf4 Obstacles.o
+                0x00001134                Obstacles::drawPattern_upsideDown(Coordinate&)
  .text._ZN9Obstacles6updateER10Coordinate
-                0x000010c8       0x5c Obstacles.o
-                0x000010c8                Obstacles::update(Coordinate&)
+                0x00001228       0x5c Obstacles.o
+                0x00001228                Obstacles::update(Coordinate&)
  .text._ZThn24_N9Obstacles6updateER10Coordinate
-                0x00001124        0x8 Obstacles.o
-                0x00001124                non-virtual thunk to Obstacles::update(Coordinate&)
+                0x00001284        0x8 Obstacles.o
+                0x00001284                non-virtual thunk to Obstacles::update(Coordinate&)
  .text._ZN12straightLine5printEv
-                0x0000112c       0x46 straightLine.o
-                0x0000112c                straightLine::print()
+                0x0000128c       0x46 straightLine.o
+                0x0000128c                straightLine::print()
  .text._ZN6Runner11getLocationEv
-                0x00001172        0xa Runner.o
-                0x00001172                Runner::getLocation()
+                0x000012d2        0xa Runner.o
+                0x000012d2                Runner::getLocation()
  .text._ZN6Runner6updateEv
-                0x0000117c       0x80 Runner.o
-                0x0000117c                Runner::update()
+                0x000012dc       0x80 Runner.o
+                0x000012dc                Runner::update()
  .text._ZThn24_N6Runner6updateEv
-                0x000011fc        0x8 Runner.o
-                0x000011fc                non-virtual thunk to Runner::update()
+                0x0000135c        0x8 Runner.o
+                0x0000135c                non-virtual thunk to Runner::update()
  .text._ZN6RunnerC2E13AnimatedImageRN3due6pin_inE
-                0x00001204       0x5c Runner.o
-                0x00001204                Runner::Runner(AnimatedImage, due::pin_in&)
-                0x00001204                Runner::Runner(AnimatedImage, due::pin_in&)
+                0x00001364       0x5c Runner.o
+                0x00001364                Runner::Runner(AnimatedImage, due::pin_in&)
+                0x00001364                Runner::Runner(AnimatedImage, due::pin_in&)
  .text._ZN3due6pin_in3getEv
-                0x00001260       0x10 main.o
-                0x00001260                due::pin_in::get()
+                0x000013c0       0x10 main.o
+                0x000013c0                due::pin_in::get()
  .text.systemInit
-                0x00001270       0x7c main.o
-                0x00001270                systemInit
+                0x000013d0       0x7c main.o
+                0x000013d0                systemInit
  .text._ZN3due6pin_inC2ENS_4pinsE
-                0x000012ec       0x34 main.o
-                0x000012ec                due::pin_in::pin_in(due::pins)
-                0x000012ec                due::pin_in::pin_in(due::pins)
+                0x0000144c       0x34 main.o
+                0x0000144c                due::pin_in::pin_in(due::pins)
+                0x0000144c                due::pin_in::pin_in(due::pins)
  .text._Z12presentationv
-                0x00001320      0x154 main.o
-                0x00001320                presentation()
+                0x00001480      0x214 main.o
+                0x00001480                presentation()
  .text._Z7runGamev
-                0x00001474      0x220 main.o
-                0x00001474                runGame()
+                0x00001694      0x220 main.o
+                0x00001694                runGame()
  .text.startup.main
-                0x00001694       0x1c main.o
-                0x00001694                main
+                0x000018b4       0x1c main.o
+                0x000018b4                main
  .text.__startup
-                0x000016b0       0x48 bmptk_cortex.o
-                0x000016b0                __startup
- .text          0x000016f8       0xec /usr/local/gcc-arm-none-eabi-5_2-2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-memcpy.o)
-                0x000016f8                memcpy
- .text.memset   0x000017e4       0x9c /usr/local/gcc-arm-none-eabi-5_2-2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-memset.o)
-                0x000017e4                memset
-                0x00001880                . = ALIGN (0x4)
+                0x000018d0       0x48 bmptk_cortex.o
+                0x000018d0                __startup
+ .text          0x00001918       0xec /usr/local/gcc-arm-none-eabi-5_2-2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-memcpy.o)
+                0x00001918                memcpy
+ .text.memset   0x00001a04       0x9c /usr/local/gcc-arm-none-eabi-5_2-2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-memset.o)
+                0x00001a04                memset
+                0x00001aa0                . = ALIGN (0x4)
  *(.glue_7t .glue_7)
- .glue_7        0x00001880        0x0 linker stubs
- .glue_7t       0x00001880        0x0 linker stubs
-                0x00001880                . = ALIGN (0x4)
+ .glue_7        0x00001aa0        0x0 linker stubs
+ .glue_7t       0x00001aa0        0x0 linker stubs
+                0x00001aa0                . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata._ZTVN3due7pin_outE
-                0x00001880        0xc matrix.o
-                0x00001880                vtable for due::pin_out
+                0x00001aa0        0xc matrix.o
+                0x00001aa0                vtable for due::pin_out
  .rodata._ZL5gamma
-                0x0000188c      0x100 matrix.o
+                0x00001aac      0x100 matrix.o
  .rodata.str1.1
-                0x0000198c       0x17 matrix.o
+                0x00001bac       0x17 matrix.o
  .rodata._ZZN3due8pin_infoENS_4pinsEE14pin_info_array
-                0x000019a3       0xa4 matrix.o
- *fill*         0x00001a47        0x1 
+                0x00001bc3       0xa4 matrix.o
+ *fill*         0x00001c67        0x1 
  .rodata._ZTV6matrix
-                0x00001a48       0x2c matrix.o
-                0x00001a48                vtable for matrix
+                0x00001c68       0x2c matrix.o
+                0x00001c68                vtable for matrix
  .rodata._ZTV5Image
-                0x00001a74        0xc Image.o
-                0x00001a74                vtable for Image
+                0x00001c94        0xc Image.o
+                0x00001c94                vtable for Image
  .rodata._ZTV6String
-                0x00001a80        0xc String.o
-                0x00001a80                vtable for String
+                0x00001ca0        0xc String.o
+                0x00001ca0                vtable for String
  .rodata._ZTV13AnimatedImage
-                0x00001a8c        0xc AnimatedImage.o
-                0x00001a8c                vtable for AnimatedImage
+                0x00001cac        0xc AnimatedImage.o
+                0x00001cac                vtable for AnimatedImage
  .rodata._ZTV9Obstacles
-                0x00001a98       0x20 Obstacles.o
-                0x00001a98                vtable for Obstacles
+                0x00001cb8       0x20 Obstacles.o
+                0x00001cb8                vtable for Obstacles
  .rodata._ZTV6Runner
-                0x00001ab8       0x20 Runner.o
-                0x00001ab8                vtable for Runner
+                0x00001cd8       0x20 Runner.o
+                0x00001cd8                vtable for Runner
  .rodata._ZTVN3due6pin_inE
-                0x00001ad8        0xc main.o
-                0x00001ad8                vtable for due::pin_in
+                0x00001cf8        0xc main.o
+                0x00001cf8                vtable for due::pin_in
  .rodata._ZL7simpson
-                0x00001ae4      0xc03 main.o
+                0x00001d04      0xc03 main.o
  .rodata._ZL2hu
-                0x000026e7      0x2a6 main.o
+                0x00002907      0x2a6 main.o
  .rodata._ZL6runner
-                0x0000298d      0x5e2 main.o
+                0x00002bad      0x5e2 main.o
  .rodata.str1.1
-                0x00002f6f       0x73 main.o
+                0x0000318f       0x73 main.o
                                  0x8a (size before relaxing)
  .rodata._ZL8gameover
-                0x00002fe2      0xc03 main.o
+                0x00003202      0xc03 main.o
  .rodata._ZL9animation
-                0x00003be5     0x6006 main.o
+                0x00003e05     0x6006 main.o
  .rodata._ZL7tahoma8
-                0x00009beb      0xb13 main.o
+                0x00009e0b      0xb13 main.o
  .rodata._ZL8tahoma10
-                0x0000a6fe      0xc51 main.o
-                0x0000b350                . = ALIGN (0x4)
- *fill*         0x0000b34f        0x1 
+                0x0000a91e      0xc51 main.o
+                0x0000b570                . = ALIGN (0x4)
+ *fill*         0x0000b56f        0x1 
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000b350                . = ALIGN (0x4)
+                0x0000b570                . = ALIGN (0x4)
  *(.gcc_except_table)
-                0x0000b350                . = ALIGN (0x4)
+                0x0000b570                . = ALIGN (0x4)
  *(.eh_frame_hdr)
-                0x0000b350                . = ALIGN (0x4)
+                0x0000b570                . = ALIGN (0x4)
  *(.eh_frame)
-                0x0000b350                . = ALIGN (0x4)
-                0x0000b350                __text_end = .
+                0x0000b570                . = ALIGN (0x4)
+                0x0000b570                __text_end = .
                 [!provide]                PROVIDE (__text_end, __text_end)
 
-.vfp11_veneer   0x0000b350        0x0
- .vfp11_veneer  0x0000b350        0x0 linker stubs
+.vfp11_veneer   0x0000b570        0x0
+ .vfp11_veneer  0x0000b570        0x0 linker stubs
 
-.v4_bx          0x0000b350        0x0
- .v4_bx         0x0000b350        0x0 linker stubs
+.v4_bx          0x0000b570        0x0
+ .v4_bx         0x0000b570        0x0 linker stubs
 
-.iplt           0x0000b350        0x0
- .iplt          0x0000b350        0x0 startup_sam3xa.o
+.iplt           0x0000b570        0x0
+ .iplt          0x0000b570        0x0 startup_sam3xa.o
 
-.rel.dyn        0x0000b350        0x0
- .rel.iplt      0x0000b350        0x0 startup_sam3xa.o
+.rel.dyn        0x0000b570        0x0
+ .rel.iplt      0x0000b570        0x0 startup_sam3xa.o
 
 .IF_YOU_SEE_THIS_YOU_HAVE_ONE_OR_MORE_GLOBAL_OBJECT_CONSTRUCTORS
  *(.init)
  *(.preinit_array)
  *(SORT(.init_array.*))
  *(.init_array)
-                0x0000b350                . = ALIGN (0x4)
-                0x0000b350                __exidx_start = .
+                0x0000b570                . = ALIGN (0x4)
+                0x0000b570                __exidx_start = .
                 [!provide]                PROVIDE (__exidx_start, __exidx_start)
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000b350                . = ALIGN (0x4)
-                0x0000b350                __exidx_end = .
+                0x0000b570                . = ALIGN (0x4)
+                0x0000b570                __exidx_end = .
                 [!provide]                PROVIDE (__exidx_end, __exidx_end)
 
 .bss            0x20000000    0x12008
@@ -1308,9 +1313,9 @@ END GROUP
                 0x20012008                __bss_end = .
                 [!provide]                PROVIDE (__bss_end, __bss_end)
 
-.data           0x20012008       0x54 load address 0x0000b350
+.data           0x20012008       0x54 load address 0x0000b570
                 0x20012008                . = ALIGN (0x4)
-                0x0000b350                __data_init_start = LOADADDR (.data)
+                0x0000b570                __data_init_start = LOADADDR (.data)
                 [!provide]                PROVIDE (__data_init_start, __data_init_start)
                 0x20012008                __data_start = .
                 [!provide]                PROVIDE (__data_start, __data_start)
@@ -1322,13 +1327,13 @@ END GROUP
  *fill*         0x2001205b        0x1 
                 0x2001205c                __data_end = .
                 [!provide]                PROVIDE (__data_end, __data_end)
-                0x0000b350                __data_init_end = LOADADDR (.data)
+                0x0000b570                __data_init_end = LOADADDR (.data)
                 [!provide]                PROVIDE (__data_init_end, __data_init_end)
                 0x00000054                PROVIDE (__data_size, (__data_end - __data_start))
                 0x00000054                PROVIDE (__data_init_size, __data_size)
                 [!provide]                PROVIDE (__data_init_end, (__data_init_start + __data_init_size))
 
-.igot.plt       0x2001205c        0x0 load address 0x0000b3a4
+.igot.plt       0x2001205c        0x0 load address 0x0000b5c4
  .igot.plt      0x2001205c        0x0 startup_sam3xa.o
                 0x2001205c                . = ALIGN (0x4)
                 0x2001205c                __heap_start = .

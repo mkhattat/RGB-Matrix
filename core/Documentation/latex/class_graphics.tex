@@ -1,0 +1,154 @@
+\hypertarget{class_graphics}{}\section{Graphics Class Reference}
+\label{class_graphics}\index{Graphics@{Graphics}}
+
+
+The interface for other graphics objects.  
+
+
+
+
+{\ttfamily \#include $<$Graphics.\+hpp$>$}
+
+Inheritance diagram for Graphics\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_graphics}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graphics_a1947a936c3beadc6d2cdf156243e25ee}{Graphics} (\hyperlink{class_screen}{Screen} \&\hyperlink{class_graphics_a7a73ddd0d3cf1b67fc54f303be017c3b}{w}, \hyperlink{classvector}{vector} \hyperlink{class_graphics_a9a857a75730ffd8d473ca7624425d92a}{size}, \hyperlink{classvector}{vector} \hyperlink{class_graphics_a88c2112c7a3db3ee56f4c7fe2cac6055}{location})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_graphics}{Graphics} constructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_graphics_a144fcecfe73dd5957c081dad42e1c11d}{draw} ()=0
+\begin{DoxyCompactList}\small\item\em draw graphics object on the screen. \end{DoxyCompactList}\item 
+\hyperlink{classvector}{vector} \hyperlink{class_graphics_aad09e009edd57dbe96858b261e9b3605}{get\+Size} () const 
+\begin{DoxyCompactList}\small\item\em return the size of a graphics object. \end{DoxyCompactList}\item 
+\hyperlink{classvector}{vector} \hyperlink{class_graphics_a80b0b5536416cf79b0c9da98e419cacd}{get\+Location} () const 
+\begin{DoxyCompactList}\small\item\em return the location of a graphics object. \end{DoxyCompactList}\item 
+\hyperlink{class_screen}{Screen} \& \hyperlink{class_graphics_a0cfd8e41ff0a1c92ebd30089d7dd6bab}{get\+Screen} () const 
+\begin{DoxyCompactList}\small\item\em return the screen used by graphics object \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_a6b89d760e95a1aad37ac1996c3f9d7ea}{set\+Location} (\hyperlink{classvector}{vector} l)
+\begin{DoxyCompactList}\small\item\em change the location of a graphics object. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_a473b0893180b72e3e506ff9e09618797}{set\+Size} (\hyperlink{classvector}{vector} s)
+\begin{DoxyCompactList}\small\item\em change the size of a graphics object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_screen}{Screen} \& \hyperlink{class_graphics_a7a73ddd0d3cf1b67fc54f303be017c3b}{w}
+\item 
+\hyperlink{classvector}{vector} \hyperlink{class_graphics_a9a857a75730ffd8d473ca7624425d92a}{size}
+\item 
+\hyperlink{classvector}{vector} \hyperlink{class_graphics_a88c2112c7a3db3ee56f4c7fe2cac6055}{location}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The interface for other graphics objects. 
+
+\hyperlink{class_graphics}{Graphics} class is an abstract class used as an interface for other graphic objects like \hyperlink{class_image}{Image}, \hyperlink{class_string}{String} and Animated \hyperlink{class_image}{Image}. This is an abstract class. It can be used only as a base for other objects. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Graphics@{Graphics}!Graphics@{Graphics}}
+\index{Graphics@{Graphics}!Graphics@{Graphics}}
+\subsubsection[{\texorpdfstring{Graphics(\+Screen \&w, vector size, vector location)}{Graphics(Screen &w, vector size, vector location)}}]{\setlength{\rightskip}{0pt plus 5cm}Graphics\+::\+Graphics (
+\begin{DoxyParamCaption}
+\item[{{\bf Screen} \&}]{w, }
+\item[{{\bf vector}}]{size, }
+\item[{{\bf vector}}]{location}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_graphics_a1947a936c3beadc6d2cdf156243e25ee}{}\label{class_graphics_a1947a936c3beadc6d2cdf156243e25ee}
+
+
+\hyperlink{class_graphics}{Graphics} constructor. 
+
+\hyperlink{class_screen}{Screen} to draw graphics on it e.\+g. matrix. Size is the size of object and location is the pixels position on the screen. 
+
+\subsection{Member Function Documentation}
+\index{Graphics@{Graphics}!draw@{draw}}
+\index{draw@{draw}!Graphics@{Graphics}}
+\subsubsection[{\texorpdfstring{draw()=0}{draw()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Graphics\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_graphics_a144fcecfe73dd5957c081dad42e1c11d}{}\label{class_graphics_a144fcecfe73dd5957c081dad42e1c11d}
+
+
+draw graphics object on the screen. 
+
+
+
+Implemented in \hyperlink{class_string_a6f00d1cdc1842feb404809c717a62581}{String}, \hyperlink{class_animated_image_ab71f472b7a737d142fb6bf838dfc9818}{Animated\+Image}, and \hyperlink{class_image_af67dbed0b509945e278bdd88088615cf}{Image}.
+
+\index{Graphics@{Graphics}!get\+Location@{get\+Location}}
+\index{get\+Location@{get\+Location}!Graphics@{Graphics}}
+\subsubsection[{\texorpdfstring{get\+Location() const }{getLocation() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector} Graphics\+::get\+Location (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_graphics_a80b0b5536416cf79b0c9da98e419cacd}{}\label{class_graphics_a80b0b5536416cf79b0c9da98e419cacd}
+
+
+return the location of a graphics object. 
+
+\index{Graphics@{Graphics}!get\+Screen@{get\+Screen}}
+\index{get\+Screen@{get\+Screen}!Graphics@{Graphics}}
+\subsubsection[{\texorpdfstring{get\+Screen() const }{getScreen() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Screen}\& Graphics\+::get\+Screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_graphics_a0cfd8e41ff0a1c92ebd30089d7dd6bab}{}\label{class_graphics_a0cfd8e41ff0a1c92ebd30089d7dd6bab}
+
+
+return the screen used by graphics object 
+
+\index{Graphics@{Graphics}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Graphics@{Graphics}}
+\subsubsection[{\texorpdfstring{get\+Size() const }{getSize() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector} Graphics\+::get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_graphics_aad09e009edd57dbe96858b261e9b3605}{}\label{class_graphics_aad09e009edd57dbe96858b261e9b3605}
+
+
+return the size of a graphics object. 
+
+\index{Graphics@{Graphics}!set\+Location@{set\+Location}}
+\index{set\+Location@{set\+Location}!Graphics@{Graphics}}
+\subsubsection[{\texorpdfstring{set\+Location(vector l)}{setLocation(vector l)}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+::set\+Location (
+\begin{DoxyParamCaption}
+\item[{{\bf vector}}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_graphics_a6b89d760e95a1aad37ac1996c3f9d7ea}{}\label{class_graphics_a6b89d760e95a1aad37ac1996c3f9d7ea}
+
+
+change the location of a graphics object. 
+
+\index{Graphics@{Graphics}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!Graphics@{Graphics}}
+\subsubsection[{\texorpdfstring{set\+Size(vector s)}{setSize(vector s)}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+::set\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf vector}}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_graphics_a473b0893180b72e3e506ff9e09618797}{}\label{class_graphics_a473b0893180b72e3e506ff9e09618797}
+
+
+change the size of a graphics object 
+
+
+
+\subsection{Member Data Documentation}
+\index{Graphics@{Graphics}!location@{location}}
+\index{location@{location}!Graphics@{Graphics}}
+\subsubsection[{\texorpdfstring{location}{location}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector} Graphics\+::location\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_graphics_a88c2112c7a3db3ee56f4c7fe2cac6055}{}\label{class_graphics_a88c2112c7a3db3ee56f4c7fe2cac6055}
+\index{Graphics@{Graphics}!size@{size}}
+\index{size@{size}!Graphics@{Graphics}}
+\subsubsection[{\texorpdfstring{size}{size}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector} Graphics\+::size\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_graphics_a9a857a75730ffd8d473ca7624425d92a}{}\label{class_graphics_a9a857a75730ffd8d473ca7624425d92a}
+\index{Graphics@{Graphics}!w@{w}}
+\index{w@{w}!Graphics@{Graphics}}
+\subsubsection[{\texorpdfstring{w}{w}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Screen}\& Graphics\+::w\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_graphics_a7a73ddd0d3cf1b67fc54f303be017c3b}{}\label{class_graphics_a7a73ddd0d3cf1b67fc54f303be017c3b}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_graphics_8hpp}{Graphics.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,70 @@
+\hypertarget{class_image}{}\section{Image Class Reference}
+\label{class_image}\index{Image@{Image}}
+
+
+Implementation for raw image files.  
+
+
+
+
+{\ttfamily \#include $<$Image.\+hpp$>$}
+
+Inheritance diagram for Image\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_image}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_image_aaa4504304ed8b2fa33bb6b4fc52a2199}{Image} (\hyperlink{class_screen}{Screen} \&\hyperlink{class_graphics_a7a73ddd0d3cf1b67fc54f303be017c3b}{w}, const uint8\+\_\+t $\ast$im, \hyperlink{classvector}{vector} \hyperlink{class_graphics_a88c2112c7a3db3ee56f4c7fe2cac6055}{location}=\hyperlink{classvector}{vector}(0, 0))
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_image}{Image} constructors. \end{DoxyCompactList}\item 
+void \hyperlink{class_image_af67dbed0b509945e278bdd88088615cf}{draw} () override
+\begin{DoxyCompactList}\small\item\em print the image on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implementation for raw image files. 
+
+This class is used to draw photos on the screen. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\subsubsection[{\texorpdfstring{Image(\+Screen \&w, const uint8\+\_\+t $\ast$im, vector location=vector(0, 0))}{Image(Screen &w, const uint8_t *im, vector location=vector(0, 0))}}]{\setlength{\rightskip}{0pt plus 5cm}Image\+::\+Image (
+\begin{DoxyParamCaption}
+\item[{{\bf Screen} \&}]{w, }
+\item[{const uint8\+\_\+t $\ast$}]{im, }
+\item[{{\bf vector}}]{location = {\ttfamily {\bf vector}(0,0)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_image_aaa4504304ed8b2fa33bb6b4fc52a2199}{}\label{class_image_aaa4504304ed8b2fa33bb6b4fc52a2199}
+
+
+\hyperlink{class_image}{Image} constructors. 
+
+\hyperlink{class_screen}{Screen} to draw image on it, e.\+g. matrix. image is a raw photo converted by a command line script. You have to include a raw file and then pass it to this function. Location is the location to draw image on the screen. 
+
+\subsection{Member Function Documentation}
+\index{Image@{Image}!draw@{draw}}
+\index{draw@{draw}!Image@{Image}}
+\subsubsection[{\texorpdfstring{draw() override}{draw() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_image_af67dbed0b509945e278bdd88088615cf}{}\label{class_image_af67dbed0b509945e278bdd88088615cf}
+
+
+print the image on the screen. 
+
+If you enabled a double buffering you have to swap buffers to draw the image on the screen. 
+
+Implements \hyperlink{class_graphics_a144fcecfe73dd5957c081dad42e1c11d}{Graphics}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_image_8hpp}{Image.\+hpp}\item 
+\hyperlink{_image_8cpp}{Image.\+cpp}\end{DoxyCompactItemize}
