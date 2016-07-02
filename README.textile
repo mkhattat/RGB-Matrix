@@ -2,7 +2,7 @@ h1. RGB-Matrix
 
 h2. About
 
-A Bare metal C++ Library for RGB Matrix 64x32 and a simple game to show the work of the library.
+An Arduino Due Bare metal C++ Library for RGB Matrix 64x32 and a simple game to show the work of the library.
 This Library uses Bmptk (Bare Metal Programming Toolkit). for more information refre to "bmptk/README.txt".
 
 You can find the source code of the library in the "core" folder.
@@ -27,4 +27,6 @@ $ bossac --port ttyACM0 -U false -e -w  -b main.bin -R
 
 h2. Contributor
 
-1. Wouter van Ooijen (wouter@voti.nl)
+Wouter van Ooijen (wouter@voti.nl)
+
+https://github.com/huict/TCTI-V1OOPC-15-BASE
