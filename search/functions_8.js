@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nmi_5fhandler',['NMI_Handler',['../startup__sam3xa_8c.html#aaa1400c15ada51a2aeaa13813e9f0c0d',1,'startup_sam3xa.c']]]
+  ['timer',['Timer',['../class_timer.html#a5f16e8da27d2a5a5242dead46de05d97',1,'Timer']]]
 ];

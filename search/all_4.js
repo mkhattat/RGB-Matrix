@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['data',['data',['../namespacemake__animation.html#a952a1aadb54a3c60705ee221076d4b2b',1,'make_animation.data()'],['../namespacemake__font.html#a16847245e84e4b74505948def31242ff',1,'make_font.data()']]],
-  ['delaymicroseconds',['delayMicroseconds',['../class_timer.html#ab0e4cd17c2beacc8013609ff00b8c84b',1,'Timer']]],
-  ['delaymilliseconds',['delayMilliseconds',['../class_timer.html#a394b71189519df8fdf3f2318cf8971ef',1,'Timer']]],
-  ['doxygen_2ehpp',['doxygen.hpp',['../doxygen_8hpp.html',1,'']]],
-  ['draw',['draw',['../class_animated_image.html#ab71f472b7a737d142fb6bf838dfc9818',1,'AnimatedImage::draw()'],['../class_animated_image.html#a70cc2439dedf9e5fc366dd3a1534c167',1,'AnimatedImage::draw(int updateInterval, bool loop=false)'],['../class_graphics.html#a144fcecfe73dd5957c081dad42e1c11d',1,'Graphics::draw()'],['../class_image.html#af67dbed0b509945e278bdd88088615cf',1,'Image::draw()'],['../class_string.html#a6f00d1cdc1842feb404809c717a62581',1,'String::draw()'],['../namespacemake__font.html#a91f038177eb213c9d6b5b542464b5e34',1,'make_font.draw()']]],
-  ['drawframe',['drawFrame',['../class_animated_image.html#a4f9a9236d7e2cec0b8b140743ac8340e',1,'AnimatedImage']]],
-  ['drawpixel',['drawPixel',['../classmatrix.html#a9e12daa9f177f70cecfeae60770eb59a',1,'matrix::drawPixel(int x, int y, uint8_t rc, uint8_t gc, uint8_t bc) override'],['../classmatrix.html#a505fdd2958c4be8cf2ceaf19873358f9',1,'matrix::drawPixel(int x, int y, uint32_t color)'],['../class_screen.html#a29b3d5ac1b1f9965daa31be3acb2058e',1,'Screen::drawPixel(int, int, uint8_t, uint8_t, uint8_t)=0'],['../class_screen.html#a01e3bb789c4169dec25e842179b7b115',1,'Screen::drawPixel(int, int, uint32_t)=0']]],
-  ['dummy_5fhandler',['Dummy_Handler',['../startup__sam3xa_8c.html#a4ed9b32000d3b15c46ffd748f32ed44d',1,'startup_sam3xa.c']]]
+  ['getheight',['getHeight',['../class_screen.html#a4edca55b221da0326dc7de0ec0f4dc91',1,'Screen']]],
+  ['getlocation',['getLocation',['../class_graphics.html#a80b0b5536416cf79b0c9da98e419cacd',1,'Graphics']]],
+  ['getscreen',['getScreen',['../class_graphics.html#a0cfd8e41ff0a1c92ebd30089d7dd6bab',1,'Graphics']]],
+  ['getsize',['getSize',['../class_graphics.html#aad09e009edd57dbe96858b261e9b3605',1,'Graphics']]],
+  ['gettotalframes',['getTotalFrames',['../class_animated_image.html#af398536b19d4bdeefebfed02c77f47b3',1,'AnimatedImage']]],
+  ['graphics',['Graphics',['../class_graphics.html',1,'Graphics'],['../class_graphics.html#a1947a936c3beadc6d2cdf156243e25ee',1,'Graphics::Graphics()']]],
+  ['graphics_2ehpp',['Graphics.hpp',['../_graphics_8hpp.html',1,'']]]
 ];

@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['fillscreen',['fillScreen',['../classmatrix.html#afbb1e0fe6c1ad426879c5019b39f896e',1,'matrix::fillScreen(uint8_t r, uint8_t g, uint8_t b) override'],['../classmatrix.html#a1a44a0f6011c61daa50391cda8d662d9',1,'matrix::fillScreen(uint32_t color)'],['../class_screen.html#a7561ce620e5dd79717bced178e32e139',1,'Screen::fillScreen(uint8_t, uint8_t, uint8_t)'],['../class_screen.html#a6e3a21e03ec2a378c9be90b7a0a149b2',1,'Screen::fillScreen(uint32_t)']]]
+  ['getheight',['getHeight',['../class_screen.html#a4edca55b221da0326dc7de0ec0f4dc91',1,'Screen']]],
+  ['getlocation',['getLocation',['../class_graphics.html#a80b0b5536416cf79b0c9da98e419cacd',1,'Graphics']]],
+  ['getscreen',['getScreen',['../class_graphics.html#a0cfd8e41ff0a1c92ebd30089d7dd6bab',1,'Graphics']]],
+  ['getsize',['getSize',['../class_graphics.html#aad09e009edd57dbe96858b261e9b3605',1,'Graphics']]],
+  ['gettotalframes',['getTotalFrames',['../class_animated_image.html#af398536b19d4bdeefebfed02c77f47b3',1,'AnimatedImage']]],
+  ['graphics',['Graphics',['../class_graphics.html#a1947a936c3beadc6d2cdf156243e25ee',1,'Graphics']]]
 ];

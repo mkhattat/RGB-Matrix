@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['vector',['vector',['../classvector.html',1,'vector'],['../classvector.html#a7fa147d3199381b9d8b32753bd1a6968',1,'vector::vector(int x, int y)'],['../classvector.html#a829904aef4f1a78fc3c52ef7c857f8f4',1,'vector::vector(const vector &amp;rhs)']]],
-  ['vector_2ehpp',['vector.hpp',['../vector_8hpp.html',1,'']]]
+  ['w',['w',['../class_graphics.html#a7a73ddd0d3cf1b67fc54f303be017c3b',1,'Graphics']]],
+  ['width',['width',['../class_screen.html#a49be8f8ccf7ed7a3151a761495c0ce21',1,'Screen']]]
 ];
