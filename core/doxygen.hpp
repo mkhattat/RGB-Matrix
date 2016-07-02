@@ -56,7 +56,7 @@
 /// <tr><td>G2<td>digital pin 37
 /// <tr><td>B<td>digital pin 26
 /// <tr><td>D<td>digital pin 28
-/// <tr><td>Latch<td>digital pin 43
+/// <tr><td>LAT<td>digital pin 43
 /// </table>
 ///
 /// \b Matrix:
