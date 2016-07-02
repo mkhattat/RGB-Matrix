@@ -7,10 +7,13 @@ For Documentation of RGB-Matrix library refer to "html/index.html" or https://mk
 
 You can find the source code of the Game in the LedRunner folder. In order to compile the game cd to the LedRunner directory and type
 
+'''sh
 make
+'''
 
 and in order to upload the compiled binary use the following commands:
 
+'''sh
 stty -F /dev/ttyACM0 1200
 bossac --port ttyACM0 -U false -e -w  -b main.bin -R
-
+'''
