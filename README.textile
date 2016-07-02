@@ -13,6 +13,7 @@ h2. Compile
 You can find the source code of the Game in the LedRunner folder. In order to compile the game cd to the LedRunner directory and type in the command line:
 
 <pre>
+$ cd LedRunner
 $ make
 </pre>
 
