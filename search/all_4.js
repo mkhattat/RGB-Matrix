@@ -1,4 +1,11 @@
 var searchData=
 [
-  ['fillscreen',['fillScreen',['../classmatrix.html#afbb1e0fe6c1ad426879c5019b39f896e',1,'matrix::fillScreen(uint8_t r, uint8_t g, uint8_t b) override'],['../classmatrix.html#a1a44a0f6011c61daa50391cda8d662d9',1,'matrix::fillScreen(uint32_t color)'],['../class_screen.html#a7561ce620e5dd79717bced178e32e139',1,'Screen::fillScreen(uint8_t, uint8_t, uint8_t)'],['../class_screen.html#a6e3a21e03ec2a378c9be90b7a0a149b2',1,'Screen::fillScreen(uint32_t)']]]
+  ['data',['data',['../namespacemake__animation.html#a952a1aadb54a3c60705ee221076d4b2b',1,'make_animation.data()'],['../namespacemake__font.html#a16847245e84e4b74505948def31242ff',1,'make_font.data()']]],
+  ['delaymicroseconds',['delayMicroseconds',['../class_timer.html#ab0e4cd17c2beacc8013609ff00b8c84b',1,'Timer']]],
+  ['delaymilliseconds',['delayMilliseconds',['../class_timer.html#a394b71189519df8fdf3f2318cf8971ef',1,'Timer']]],
+  ['doxygen_2ehpp',['doxygen.hpp',['../doxygen_8hpp.html',1,'']]],
+  ['draw',['draw',['../class_animated_image.html#ab71f472b7a737d142fb6bf838dfc9818',1,'AnimatedImage::draw()'],['../class_animated_image.html#a70cc2439dedf9e5fc366dd3a1534c167',1,'AnimatedImage::draw(int updateInterval, bool loop=false)'],['../class_graphics.html#a144fcecfe73dd5957c081dad42e1c11d',1,'Graphics::draw()'],['../class_image.html#af67dbed0b509945e278bdd88088615cf',1,'Image::draw()'],['../class_string.html#a6f00d1cdc1842feb404809c717a62581',1,'String::draw()'],['../namespacemake__font.html#a91f038177eb213c9d6b5b542464b5e34',1,'make_font.draw()']]],
+  ['drawframe',['drawFrame',['../class_animated_image.html#a4f9a9236d7e2cec0b8b140743ac8340e',1,'AnimatedImage']]],
+  ['drawpixel',['drawPixel',['../classmatrix.html#a9e12daa9f177f70cecfeae60770eb59a',1,'matrix::drawPixel(int x, int y, uint8_t rc, uint8_t gc, uint8_t bc) override'],['../classmatrix.html#a505fdd2958c4be8cf2ceaf19873358f9',1,'matrix::drawPixel(int x, int y, uint32_t color)'],['../class_screen.html#a29b3d5ac1b1f9965daa31be3acb2058e',1,'Screen::drawPixel(int, int, uint8_t, uint8_t, uint8_t)=0'],['../class_screen.html#a01e3bb789c4169dec25e842179b7b115',1,'Screen::drawPixel(int, int, uint32_t)=0']]],
+  ['dummy_5fhandler',['Dummy_Handler',['../startup__sam3xa_8c.html#a4ed9b32000d3b15c46ffd748f32ed44d',1,'startup_sam3xa.c']]]
 ];

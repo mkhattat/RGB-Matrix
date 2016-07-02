@@ -15,8 +15,11 @@ var files =
       [ "Image", "class_image.html", "class_image" ]
     ] ],
     [ "init.c", "init_8c.html", "init_8c" ],
+    [ "make_animation.py", "make__animation_8py.html", "make__animation_8py" ],
+    [ "make_font.py", "make__font_8py.html", "make__font_8py" ],
     [ "matrix.cpp", "matrix_8cpp.html", "matrix_8cpp" ],
     [ "matrix.hpp", "matrix_8hpp.html", "matrix_8hpp" ],
+    [ "readbmp.py", "readbmp_8py.html", "readbmp_8py" ],
     [ "Screen.hpp", "_screen_8hpp.html", [
       [ "Screen", "class_screen.html", "class_screen" ]
     ] ],

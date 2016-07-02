@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['main',['main',['../gamma__generator_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'gamma_generator.c']]],
-  ['matrix',['matrix',['../classmatrix.html',1,'matrix'],['../classmatrix.html#a4e54abccfd55d40a3caebb47b1bf96a0',1,'matrix::matrix(int width, int height, bool double_buffer)'],['../classmatrix.html#a29a4203237fd9480a42b435fb504b2b5',1,'matrix::matrix(int width, int height, bool double_buffer, target::pin_out _lat, target::pin_out _oe, target::pin_out _clk, target::pin_out _selA, target::pin_out _selB, target::pin_out _selC, target::pin_out _selD, target::pin_out _b1, target::pin_out _g1, target::pin_out _r1, target::pin_out _b2, target::pin_out _g2, target::pin_out _r2)']]],
-  ['matrix_2ecpp',['matrix.cpp',['../matrix_8cpp.html',1,'']]],
-  ['matrix_2ehpp',['matrix.hpp',['../matrix_8hpp.html',1,'']]]
+  ['line',['line',['../namespacemake__animation.html#a640cfa54012899dc2bd03f02312dea6d',1,'make_animation.line()'],['../namespacemake__font.html#a94ff6e7201b048bda3c399f88f7a2d2e',1,'make_font.line()'],['../namespacereadbmp.html#af90747db8f38769ffde8a91602c52c30',1,'readbmp.line()']]],
+  ['location',['location',['../class_graphics.html#a88c2112c7a3db3ee56f4c7fe2cac6055',1,'Graphics']]]
 ];
