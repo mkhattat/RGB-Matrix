@@ -5,9 +5,10 @@ h2. About
 An Arduino Due Bare metal C++ Library for RGB Matrix 64x32 and a simple game to show the work of the library.
 This Library uses Bmptk (Bare Metal Programming Toolkit). for more information refre to "bmptk/README.txt".
 
+You can find the source code of the library in the "core" folder.
+
 h2. Documentation
 
-You can find the source code of the library in the "core" folder.
 For Documentation of RGB-Matrix library refer to "html/index.html" or https://mkhattat.github.io/RGB-Matrix/index.html
 
 h2. Compile
