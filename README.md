@@ -12,6 +12,5 @@ make
 and in order to upload the compiled binary use the following commands:
 
 stty -F /dev/ttyACM0 1200
-
 bossac --port ttyACM0 -U false -e -w  -b main.bin -R
 
