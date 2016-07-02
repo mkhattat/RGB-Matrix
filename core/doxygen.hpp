@@ -78,7 +78,8 @@
 /// to the constructor:
 /// \code{.cpp}
 /// #include "matrix.hpp"
-///
+/// 
+///     namespace target = hwlib::target;
 ///     matrix led(64, 32, true, target::pins::d43, target::pins::d42, target::pins::d39,
 ///				target::pins::d25, target::pins::d26, target::pins::d27, target::pins::d28,
 ///				target::pins::d33, target::pins::d34, target::pins::d35, target::pins::d36,
@@ -247,4 +248,33 @@
 /// pixel(0,y).
 ///
 /// \b Note: By using scroll function you do not need to use swap_buffer();
-
+/// 
+/// <b> Compile: </b>
+/// 
+/// In order to compile your code you need to use make file. This project uses bmptk make file made by Wouter van Ooijen.
+/// Just add your source files to the Source section seprated by space here is such an expample of make file for the RGB-Matrix library:
+/// \code{.sh}
+/// BMPTK := $(BMPTK)../
+/// # source files in this project (main.cpp is automatically assumed)
+/// SOURCES := startup_sam3xa.c matrix.cpp Image.cpp String.cpp AnimatedImage.cpp Timer.cpp
+///
+/// #header files in this project
+/// HEADERS := init.c
+///
+/// # other places to look for files for this project
+/// SEARCH  := $(BMPTK)bmptk/targets/cortex/atmel/sam3xa/include ../core/
+///
+/// # set BMPTK to the next higher directory and defer to the Makefile.due
+/// include $(BMPTK)Makefile.due
+/// \endcode
+/// 
+/// <b> Upload: </b>
+///
+/// In order to upload your project and send it to the Arduino Due you need "bossac" commanline tool.
+/// \code{.sh}
+/// # Reset the Arduino Due
+/// stty -F /dev/ttyACM0 1200
+/// 
+/// # Upload main.bin to the Ardruino Due
+/// bossac --port ttyACM0 -U false -e -w  -b main.bin -R
+/// \endcode
