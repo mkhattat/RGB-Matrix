@@ -19,6 +19,7 @@ namespace target = hwlib::target;
 
 void presentation(){
 	auto next_button = hwlib::target::pin_in(hwlib::target::pins::d2);
+	Timer t;
 	
 //	matrix led(64, 32, true, target::pins::d43, target::pins::d42, target::pins::d39,
 //				target::pins::d25, target::pins::d26, target::pins::d27, target::pins::d28,
@@ -27,20 +28,42 @@ void presentation(){
 	matrix led(64, 32, true);
 	led.start();
 
-	
-	Timer t;
-	
-	led.clear();
-	Image im(led, simpson, vector(15, 0));
-//	led.fillScreen(50,10,10);
-	im.draw();
+	/* Colors with diffrent brightness
+	for (int y=0; y<16; y++){
+		for (int x=0; x<32; x++){
+			led.drawPixel(x, y, 0, 35,0); 
+		}
+	}
+	for (int y=0; y<16; y++){
+		for (int x=32; x<64; x++){
+			led.drawPixel(x, y, 0, 75,0); 
+		}
+	}
+	for (int y=16; y<32; y++){
+		for (int x=0; x<32; x++){
+			led.drawPixel(x, y, 0, 255,0); 
+		}
+	}
+	for (int y=16; y<32; y++){
+		for (int x=32; x<64; x++){
+			led.drawPixel(x, y, 0, 150,0); 
+		}
+	}
 	led.swap_buffer(false);
-
 	while (next_button.get()){
 		
 	}
+	*/
+
+	led.clear();
+	Image im(led, simpson, vector(15, 0));
+	im.draw();
+	led.swap_buffer(false);
+	while (next_button.get()){
+		
+	}
+	t.delayMilliseconds(1000);	
 	
-	t.delayMilliseconds(1000);
 	led.clear();
 	AnimatedImage a_im(led, animation, vector(15,1));
 	while (next_button.get()){
@@ -48,7 +71,7 @@ void presentation(){
 	}
 
 
-	t.delayMilliseconds(1000);
+	t.delayMilliseconds(1000);	
 	led.clear();
 	Image im2(led, hu, vector(48, 0));
 	im2.draw();

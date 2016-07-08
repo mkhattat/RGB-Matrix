@@ -8,7 +8,7 @@ Obstacles::Obstacles(Screen &w, hwlib::target::pin_in &upsideDown_button, vector
 //	uint32_t points = 0;	
 	color_up = 0x9A33FF;
 	color_down = 0x8F1455;
-	patternSize = 84;
+	patternSize = 166;
 	startWidth = w.getWidth();
 	upsideDown_flag = false;
 	button_pressed = false;

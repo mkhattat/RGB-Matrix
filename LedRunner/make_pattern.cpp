@@ -1,9 +1,3 @@
-/* This is a helper script for the game.
- * You do not need to complie this for the actuele game.
- *  This script is used in combination with pipe to build the patterns
- */
-
-
 #include <iostream>
 #include <string>
 
@@ -15,7 +9,7 @@ int main(){
 	cin >> str_up;
 	cin >> str_down;
 
-	int size = 1000;
+	int size = 2000;
 	uint8_t array[size];
 
 	for (int i = 0; i<size; i++){

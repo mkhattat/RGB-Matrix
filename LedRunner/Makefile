@@ -17,7 +17,7 @@ SOURCES := startup_sam3xa.c matrix.cpp Image.cpp String.cpp AnimatedImage.cpp Ti
 HEADERS := init.c
 
 # other places to look for files for this project
-SEARCH  := $(BMPTK)bmptk/targets/cortex/atmel/sam3xa/include ../core/
+SEARCH  := $(BMPTK)bmptk/targets/cortex/atmel/sam3xa/include ../core
 
 # set BMPTK to the next higher directory and defer to the Makefile.due
 include $(BMPTK)Makefile.due
